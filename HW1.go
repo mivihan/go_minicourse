@@ -6,7 +6,6 @@ import (
 	"sort"
 )
 
-// Вспомогательные функции
 func inputArray() []int {
 	var n int
 	fmt.Print("Введите количество элементов в массиве: ")
@@ -104,7 +103,6 @@ func binarySearch(arr []int, target int) int {
 	return -1
 }
 
-// Основные задачи
 func main() {
 	tasks := []struct {
 		number int
@@ -141,19 +139,16 @@ func main() {
 		{29, "Бинарный поиск"},
 		{30, "Очередь на основе двух стеков"},
 	}
-
-	// Вывод списка задач
+	
 	fmt.Println("Список доступных задач:")
 	for _, task := range tasks {
 		fmt.Printf("%d. %s\n", task.number, task.desc)
 	}
-
-	// Запрос номера задания
+	
 	var choice int
 	fmt.Print("Введите номер задания: ")
 	fmt.Scan(&choice)
-
-	// Обработка выбора задания
+	
 	switch choice {
 	case 1:
 		fmt.Println("Привет, мир!")
