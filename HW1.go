@@ -215,7 +215,7 @@ func main() {
 	fmt.Scan(&taskNum)
 	taskNum--
 
-	if taskNum < 0 || taskNum >= len(exercises)) {
+	if taskNum < 0 || taskNum >= len(exercises) {
 		fmt.Println("Некорректный номер задания")
 		return
 	}
